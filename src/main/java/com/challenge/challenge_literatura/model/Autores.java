@@ -14,14 +14,17 @@ public class Autores {
     @Column(name = "nombre", columnDefinition = "VARCHAR(50)")
     private String nombre;
 
-    @Column(name = "nacimiento",columnDefinition = "DATE")
-    private LocalDate nacimiento;
+    @Column(name = "nacimiento")
+    private Integer nacimiento;
 
-    @Column(name = "muerte",columnDefinition = "DATE")
-    private LocalDate muerte;
+    @Column(name = "muerte")
+    private Integer muerte;
+
+    @OneToOne(mappedBy = "autor")
+    private Literatura literatura;
 
     //Contructors & Empty
-    public Autores(String nombre, LocalDate nacimiento, LocalDate muerte) {
+    public Autores(String nombre, Integer nacimiento, Integer muerte) {
         this.nombre = nombre;
         this.nacimiento = nacimiento;
         this.muerte = muerte;
@@ -45,19 +48,19 @@ public class Autores {
         this.nombre = nombre;
     }
 
-    public LocalDate getNacimiento() {
+    public Integer getNacimiento() {
         return nacimiento;
     }
 
-    public void setNacimiento(LocalDate nacimiento) {
+    public void setNacimiento(Integer nacimiento) {
         this.nacimiento = nacimiento;
     }
 
-    public LocalDate getMuerte() {
+    public Integer getMuerte() {
         return muerte;
     }
 
-    public void setMuerte(LocalDate muerte) {
+    public void setMuerte(Integer muerte) {
         this.muerte = muerte;
     }
 

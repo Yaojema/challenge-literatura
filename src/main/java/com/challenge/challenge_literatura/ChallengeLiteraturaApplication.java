@@ -24,7 +24,7 @@ public class ChallengeLiteraturaApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		System.out.println("Inicio APP");
 		var consumoApi = new ConsumoAPI();
-		var json = consumoApi.obtenerDatos("https://gutendex.com/books/1513/");
+		var json = consumoApi.obtenerDatos("https://gutendex.com/books/?search=middlemarch");
 		System.out.println(json);
 		ConvierteDatos conversor = new ConvierteDatos();
 		var datos = conversor.obtenerDatos(json, DatosLiteratura.class);
