@@ -10,10 +10,17 @@ public class Literatura {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(name = "titulo",columnDefinition = "VARCHAR(50)")
     private String titulo;
+
+    @OneToOne(targetEntity = Autores.class, cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "id_autor")
     private Autores autor;
+
+    @Column(columnDefinition = "VARCHAR(10)")
     private String idioma;
+
+    @Column(name = "descargas")
     private Integer descargas;
 
     //*** Constructor
@@ -67,8 +74,6 @@ public class Literatura {
     }
 
     // To String
-
-
     @Override
     public String toString() {
         return

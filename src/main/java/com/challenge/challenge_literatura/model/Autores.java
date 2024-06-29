@@ -1,13 +1,27 @@
 package com.challenge.challenge_literatura.model;
 
+import jakarta.persistence.*;
+
+import java.time.LocalDate;
+
+@Entity
 public class Autores {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nombre", columnDefinition = "VARCHAR(50)")
     private String nombre;
-    private Integer nacimiento;
-    private Integer muerte;
+
+    @Column(name = "nacimiento",columnDefinition = "DATE")
+    private LocalDate nacimiento;
+
+    @Column(name = "muerte",columnDefinition = "DATE")
+    private LocalDate muerte;
 
     //Contructors & Empty
-    public Autores(String nombre, Integer nacimiento, Integer muerte) {
+    public Autores(String nombre, LocalDate nacimiento, LocalDate muerte) {
         this.nombre = nombre;
         this.nacimiento = nacimiento;
         this.muerte = muerte;
@@ -31,19 +45,19 @@ public class Autores {
         this.nombre = nombre;
     }
 
-    public Integer getNacimiento() {
+    public LocalDate getNacimiento() {
         return nacimiento;
     }
 
-    public void setNacimiento(Integer nacimiento) {
+    public void setNacimiento(LocalDate nacimiento) {
         this.nacimiento = nacimiento;
     }
 
-    public Integer getMuerte() {
+    public LocalDate getMuerte() {
         return muerte;
     }
 
-    public void setMuerte(Integer muerte) {
+    public void setMuerte(LocalDate muerte) {
         this.muerte = muerte;
     }
 
