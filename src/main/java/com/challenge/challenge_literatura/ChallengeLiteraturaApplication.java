@@ -22,14 +22,14 @@ public class ChallengeLiteraturaApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("hola");
+		System.out.println("Inicio APP");
 		var consumoApi = new ConsumoAPI();
 		var json = consumoApi.obtenerDatos("https://gutendex.com/books/1513/");
 		System.out.println(json);
 		ConvierteDatos conversor = new ConvierteDatos();
 		var datos = conversor.obtenerDatos(json, DatosLiteratura.class);
 		System.out.println(datos);
-		System.out.println("Hola2");
+		System.out.println("APP ENDs");
 //		Principal principal = new Principal(repository);
 //		principal.muestraElMenu();
 
