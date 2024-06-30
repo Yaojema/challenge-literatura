@@ -1,11 +1,5 @@
 package com.challenge.challenge_literatura;
 
-import com.challenge.challenge_literatura.model.DatosLiteratura;
-import com.challenge.challenge_literatura.principal.Principal;
-import com.challenge.challenge_literatura.repository.LiteraturaRepository;
-import com.challenge.challenge_literatura.service.ConsumoAPI;
-import com.challenge.challenge_literatura.service.ConvierteDatos;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
