@@ -13,18 +13,20 @@ public class Literatura {
     @Column(name = "titulo",columnDefinition = "VARCHAR(50)")
     private String titulo;
 
-    @OneToOne(targetEntity = Autores.class, cascade = CascadeType.PERSIST)
+//    @OneToOne(targetEntity = Autores.class, cascade = CascadeType.PERSIST)
+    @ManyToOne(targetEntity = Autores.class ,fetch = FetchType.EAGER)
     @JoinColumn(name = "id_autor")
     private Autores autor;
 
     @Column(columnDefinition = "VARCHAR(10)")
-    private String idioma;
+    @Enumerated(EnumType.STRING)
+    private Idioma idioma;
 
     @Column(name = "descargas")
     private Integer descargas;
 
     //*** Constructor
-    public Literatura(String titulo, Autores autor, String idioma, Integer descargas) {
+    public Literatura(String titulo, Autores autor, Idioma idioma, Integer descargas) {
         this.titulo = titulo;
         this.autor = autor;
         this.idioma = idioma;
@@ -57,11 +59,11 @@ public class Literatura {
         this.autor = autor;
     }
 
-    public String getIdioma() {
+    public Idioma getIdioma() {
         return idioma;
     }
 
-    public void setIdioma(String idioma) {
+    public void setIdioma(Idioma idioma) {
         this.idioma = idioma;
     }
 
