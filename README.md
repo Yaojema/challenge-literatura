@@ -2,6 +2,7 @@
 # Challenge literatura con Spring Boot
 
 En este desafío de programación, cree mi propio catálogo de libros consultando la API de Gutendex para la creación de mi catalogo de literatura. Aprendi a realizar solicitudes a una API de libros, mapping con Jackson databind, a manipular datos JSON, guardarlos en una base de datos y, finalmente, a filtrar y mostrar los libros y autores de interés.
+
 ![Estatus](https://img.shields.io/badge/STATUS-FINALIZADO-green)
 
 ## Se creó 5 funcionalidades
