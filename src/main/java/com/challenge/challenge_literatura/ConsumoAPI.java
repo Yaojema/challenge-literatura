@@ -1,4 +1,4 @@
-package com.challenge.challenge_literatura.service;
+package com.challenge.challenge_literatura;
 
 import java.io.IOException;
 import java.net.URI;
