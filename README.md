@@ -3,6 +3,8 @@
 
 En este desafío de programación, cree mi propio catálogo de libros consultando la API de Gutendex para la creación de mi catalogo de literatura. Aprendi a realizar solicitudes a una API de libros, mapping con Jackson databind, a manipular datos JSON, guardarlos en una base de datos y, finalmente, a filtrar y mostrar los libros y autores de interés.
 
+![badge literalura](https://github.com/Yaojema/challenge-literatura/assets/158106141/96877dff-494d-43b3-8969-1a442233b275)
+
 ![Estatus](https://img.shields.io/badge/STATUS-FINALIZADO-green)
 
 ## :hammer: Se creó 5 funcionalidades
