@@ -13,7 +13,7 @@ En este desafío de programación, cree mi propio catálogo de libros consultand
 4. Listar los autores vivos en un determinado año
 5. Listar por idiomas
 
-## Se utilizó
+## Se utilizó estas tecnologías
 
 * Spring Boot 3.3.0
 * Java 17
