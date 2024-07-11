@@ -5,7 +5,7 @@ En este desafío de programación, cree mi propio catálogo de libros consultand
 
 ![Estatus](https://img.shields.io/badge/STATUS-FINALIZADO-green)
 
-## Se creó 5 funcionalidades
+## :hammer: Se creó 5 funcionalidades
 
 1. Buscar libros por titulo y registrarlo en la base de datos
 2. Listar todos los libros de la base de datos
